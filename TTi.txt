@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    //JavaScript Day + 1
+
+    //태어난 연도 입력받아 띠 출력하기 
+
+    const birth = Number(prompt(`태어난 연도를 입력해주세요`))
+   
+    const year = birth % 12
+
+
+    if (year === 0) {
+      alert(`${birth}년도생은 원숭이띠 입니다.`)
+    }
+    else if (year === 1) {
+      alert(`${birth}년도생은 닭띠 입니다.`)
+    }
+    else if (year === 2) {
+      alert(`${birth}년도생은 개띠 입니다.`)
+    }
+    else if (year === 3) {
+      alert(`${birth}년도생은 돼지띠 입니다.`)
+    }
+    else if (year === 4) {
+      alert(`${birth}년도생은 쥐띠 입니다.`)
+    }
+    else if (year === 5) {
+      alert(`${birth}년도생은 소띠 입니다.`)
+    }
+    else if (year === 6) {
+      alert(`${birth}년도생은 호랑이띠 입니다.`)
+    }
+    else if (year === 7) {
+      alert(`${birth}년도생은 토끼띠 입니다.`)
+    }
+    else if (year === 8) {
+      alert(`${birth}년도생은 용띠 입니다.`)
+    }
+    else if (year === 9) {
+      alert(`${birth}년도생은 뱀띠 입니다.`)
+    }
+    else if (year === 10) {
+      alert(`${birth}년도생은 말띠 입니다.`)
+    }
+    else  {
+      alert(`${birth}년도생은 양띠 입니다.`)
+    }
+    //여기까지 노가다 
+
+
+    const birth2 = Number(prompt(`태어난 연도를 입력해주세요`)) 
+    const year2 = birth2 % 12
+    const tti = '원숭이, 닭, 개, 돼지, 쥐, 소, 호랑이, 토끼, 용, 뱀, 말, 양'.split(', ') //스플릿으로 , 마다 쪼개준다
+
+    alert(`${birth2}년생은 ${tti[year2]}띠입니다`) 
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
